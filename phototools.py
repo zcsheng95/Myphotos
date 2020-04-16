@@ -138,7 +138,7 @@ def handle_photo():
     tmp = bubbleYear(list_info)
     bubble(tmp)
     final_dict = {"list": list_info}
-    with open("../themes/next/source/lib/myPhotos/data.json", "w") as fp:
+    with open("../themes/next/source/lib/album/data.json", "w") as fp:
         json.dump(final_dict, fp)
 
 
