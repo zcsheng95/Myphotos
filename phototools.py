@@ -77,9 +77,6 @@ def compress_photo():
     '''调用压缩图片的函数
     '''
     src_dir, des_dir = "photos/", "min_photos/"
-    for root, dirs, files in os.walk(des_dir):
-        for file in files:
-            os.remove(os.path.join(root, file))
     if directory_exists(src_dir):
         if not directory_exists(src_dir):
             make_directory(src_dir)
